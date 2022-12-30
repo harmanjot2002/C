@@ -31,4 +31,13 @@ void main(){
     int e=5,f;
     f=~e;
     printf("\n %i",f);
+
+    int h;
+    h=5,4;
+    printf("\n %d",h);
+    // int g=5,4;
+    // printf("\n %d",g); //error
+    int g;
+    g=(5,4);
+    printf("\n %d",g);
 }
