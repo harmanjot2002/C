@@ -164,4 +164,44 @@ void main(){
         }
         printf("\n");
     }
+
+    printf("\n");
+    printf("Alphabet Pattern-1");
+    printf("\n");
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            printf("%c",64+j);
+        }
+        printf("\n");
+    }
+
+    printf("\n");
+    printf("Alphabet Pattern-2");
+    printf("\n");
+    for(int i=n;i>=1;i--){
+        for(int j=1;j<=i;j++){
+            printf("%c",64+j);
+        }
+        printf("\n");
+    }
+
+    printf("\n");
+    printf("Alphabet Pattern-3");
+    printf("\n");
+    for(int i=n;i>=1;i--){
+        for(int j=1;j<=i;j++){
+            printf("%c",64+i);
+        }
+        printf("\n");
+    }
+
+    printf("\n");
+    printf("Alphabet Pattern-4");
+    printf("\n");
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+            printf("%c",64+i);
+        }
+        printf("\n");
+    }
 }
