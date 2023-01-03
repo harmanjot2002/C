@@ -14,4 +14,10 @@ int main(){
     int r=7;
     int area=3.14*r*r;
     printf("Area of circle is:\n%d",area);
+
+    int principle=10000;
+    int rate=2;
+    int time=2;
+    int si=(principle*rate*time)/100;
+    printf("The simple interest is: %d",si);
 }
