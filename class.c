@@ -9,5 +9,9 @@ int main(){
     printf("Sum is %d ",a+b);
 
     int c=4,d=5;
-    printf("\n %d",c+d);
+    printf("\n %d \n",c+d);
+   
+    int r=7;
+    int area=3.14*r*r;
+    printf("Area of circle is:\n%d",area);
 }
