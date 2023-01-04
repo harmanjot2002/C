@@ -37,7 +37,6 @@ int main(){
    a=b;
    b=temp;
    printf("a=%d,b=%d",a,b);
-*/
 
    int a=4;
    int b=5;
@@ -45,4 +44,11 @@ int main(){
    b=a-b;
    a=a-b;
    printf("%d %d",a,b);
+*/
+
+    int x=5;
+    if(x%2==0)
+        printf("Even"); 
+    else
+        printf("Odd");
 }
