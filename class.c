@@ -29,6 +29,7 @@ int main(){
     scanf("%d %d %c",&_,&__,&___);
     printf("%d %d %c",_,__,___);
 
+
    int a;
    int b;
    scanf("%d %d",&a,&b);
