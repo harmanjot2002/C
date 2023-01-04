@@ -40,4 +40,19 @@ int main(){
     }
     printf("Even are %d",even);
     printf("\nodd are %d",odd);
+
+    //Sum of 2 arrays
+    int a1[5];
+    int a2[5];
+    int sumArr[5];
+    printf("\nEnter values of first array: ");
+    for(int i=0;i<5;i++)
+        scanf("%d",&a1[i]);
+    printf("Enter values of second array: ");
+    for(int i=0;i<5;i++)
+        scanf("%d",&a2[i]);
+    for(int i=0;i<5;i++){
+        sumArr[i]=a1[i]+a2[i];
+        printf("Sum at index %d is %d\n",i,sumArr[i]);
+    }
 }
