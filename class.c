@@ -21,14 +21,13 @@ int main(){
     int time=2;
     int si=(principle*rate*time)/100;
     printf("The simple interest is: %d",si);
-
     */
 
-    /*int _,__;
+    /*
+    int _,__;
     char ___;
     scanf("%d %d %c",&_,&__,&___);
     printf("%d %d %c",_,__,___);
-    */
 
    int a;
    int b;
@@ -37,5 +36,14 @@ int main(){
    temp=a;
    a=b;
    b=temp;
+   printf("a=%d,b=%d",a,b);
+
+*/
+
+   int a=4;
+   int b=5;
+   a=a+b;
+   b=a-b;
+   a=a-b;
    printf("%d %d",a,b);
 }
