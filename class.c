@@ -1,5 +1,6 @@
 #include <stdio.h>
 int main(){
+    /*
     printf("Hi! \nMyself Harmanjot Kaur from BE-CSE Chitkara University,Rajpura.\nI belong to Faridkot,Punjab.\nI was born on 12th December,2002.\nThanks!!\n");
 
     int a;
@@ -20,4 +21,21 @@ int main(){
     int time=2;
     int si=(principle*rate*time)/100;
     printf("The simple interest is: %d",si);
+
+    */
+
+    /*int _,__;
+    char ___;
+    scanf("%d %d %c",&_,&__,&___);
+    printf("%d %d %c",_,__,___);
+    */
+
+   int a;
+   int b;
+   scanf("%d %d",&a,&b);
+   int temp;
+   temp=a;
+   a=b;
+   b=temp;
+   printf("%d %d",a,b);
 }
