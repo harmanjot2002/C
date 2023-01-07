@@ -68,12 +68,13 @@ int main(){
             scanf("%d",&a[i][j]);
         }
     }
-    printf("Enter values of first matrix: ");
+    printf("Enter values of second matrix: ");
     for(int i=0;i<2;i++){
         for(int j=0;j<3;j++){
             scanf("%d",&b[i][j]);
         }
     }
+    printf("Resultant matrix is: \n");
     for(int i=0;i<2;i++){
         for(int j=0;j<3;j++){
             c[i][j]=a[i][j]+b[i][j];
