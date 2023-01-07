@@ -96,11 +96,13 @@ int main(){
 
    //Matrix Multiplication
     int a[3][3],b[3][2],c[3][2],i,j,k,sum;
+    printf("Enter values of first matrix: ");
     for(i=0;i<3;i++){
         for(j=0;j<3;j++){
             scanf("%d",&a[i][j]);
         }
     }
+    printf("Enter values of second matrix: ");
     for(i=0;i<3;i++){
         for(j=0;j<2;j++){
             scanf("%d",&b[i][j]);
@@ -114,6 +116,13 @@ int main(){
                 c[i][j]=sum;
             }
         }
+    }
+    printf("Resultant matrix is: \n");
+    for(i=0;i<3;i++){
+        for(j=0;j<2;j++){
+            printf("%d \n",c[i][j]);
+        }
+        printf("\n");
     }
     return 0;
 }
