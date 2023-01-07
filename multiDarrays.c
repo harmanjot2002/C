@@ -19,6 +19,7 @@ int main(){
     printf("sum is: %d \n",sum);
     */
 
+
    /*
     //Transpose of matrix
     int a[2][3],i,j;
@@ -60,7 +61,16 @@ int main(){
     }
     */
 
+
     //Sum of 2 matrices
+    /*
+        Enter values of first matrix: 1 2 3 1 0 1
+        Enter values of second matrix: 1 1 1 1 1 1
+        Resultant matrix is: 
+        2       3       4 
+        2       1       2 
+    */
+   /*
     int a[2][3],b[2][3],c[2][3],i,j;
     printf("Enter values of first matrix: ");
     for(int i=0;i<2;i++){
@@ -82,5 +92,6 @@ int main(){
         }
         printf("\n");
     }
+    */
     return 0;
 }
