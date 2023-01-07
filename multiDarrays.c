@@ -95,6 +95,14 @@ int main(){
     */
 
    //Matrix Multiplication
+   /*
+    Enter values of first matrix: 0 5 2 -1 1 0 7 4 3
+    Enter values of second matrix: 1 2 0 4 3 5
+    Resultant matrix is: 
+    6       30 
+    -1      2 
+    16      45
+   */
     int a[3][3],b[3][2],c[3][2],i,j,k,sum;
     printf("Enter values of first matrix: ");
     for(i=0;i<3;i++){
@@ -120,7 +128,7 @@ int main(){
     printf("Resultant matrix is: \n");
     for(i=0;i<3;i++){
         for(j=0;j<2;j++){
-            printf("%d \n",c[i][j]);
+            printf("%d \t",c[i][j]);
         }
         printf("\n");
     }
