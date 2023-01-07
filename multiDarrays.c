@@ -19,6 +19,7 @@ int main(){
     printf("sum is: %d \n",sum);
     */
 
+   /*
     //Transpose of matrix
     int a[2][3],i,j;
     for(i=0;i<2;i++){
@@ -32,5 +33,34 @@ int main(){
         }
         printf("\n");
     }
+    */
+
+   
+    //Sum of individual rows and columns
+    /*
+        I/P:1 2 1 2 3 5 0 5 -1
+        O/P:sr=4,sc=3 
+            sr=10,sc=10 
+            sr=4,sc=5 
+    */
+   /*
+    int a[3][3],i,j,sc,sr;
+    for(i=0;i<3;i++){
+        for(j=0;j<3;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<3;i++){
+        sc=sr=0;
+        for(j=0;j<3;j++){
+            sr=sr+a[i][j];
+            sc=sc+a[j][i];
+        }
+        printf("sr=%d,sc=%d \n",sr,sc);
+    }
+    */
+
+    //Sum of 2 matrices
+    
     return 0;
 }
