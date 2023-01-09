@@ -34,6 +34,14 @@ int main(){
     scanf("%4s",ch);
     printf("%s",ch);
     */
+
+   /*
+    char carName[] = "Volvo";
+    int i;
+    for (i = 0; i < 5; ++i) {
+    printf("%c\n", carName[i]);
+    }
+   */
     char name[30];
     printf("Enter name: ");
     scanf("%s",name); 
