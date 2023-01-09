@@ -11,7 +11,11 @@ int main(){
     gets(name1);
     printf("%s",name1);
     */
-   
+
+    char r[]={'H','a','r','m','a','n'};
+    printf("%s \n",r);
+    char s[]={'H','a','r','m','a','n','\0'};
+    printf("%s",s);
     char name1[30];
     printf("\nEnter name1: ");
     gets(name1);
