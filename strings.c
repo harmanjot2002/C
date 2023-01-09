@@ -23,13 +23,25 @@ int main(){
     printf("%s",name1);
     */
 
-
+   /*
    char greetings[] = "Hello World!";
     printf("%c", greetings[0]);
+    */
 
+   /*
     char ch[5];
     printf("Enter string: ");
     scanf("%4s",ch);
     printf("%s",ch);
+    */
+    char name[30];
+    printf("Enter name: ");
+    scanf("%s",name); 
+    printf("%.5s",name); 
+    printf("%10.5s\n",name); 
+    puts(name);
+    puts(name);
+    printf("%s\n",&name);
+    printf("%s",&name[2]);
     return 0;
 }
