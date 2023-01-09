@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<string.h>
 int main(){
     /*
     char name[30];
@@ -42,6 +43,8 @@ int main(){
     printf("%c\n", carName[i]);
     }
    */
+
+  /*
     char name[30];
     printf("Enter name: ");
     scanf("%s",name); 
@@ -51,5 +54,8 @@ int main(){
     puts(name);
     printf("%s\n",&name);
     printf("%s",&name[2]);
+  */
+    
+
     return 0;
 }
