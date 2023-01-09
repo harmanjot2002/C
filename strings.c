@@ -24,6 +24,9 @@ int main(){
     */
 
 
+   char greetings[] = "Hello World!";
+    printf("%c", greetings[0]);
+
     char ch[5];
     printf("Enter string: ");
     scanf("%4s",ch);
