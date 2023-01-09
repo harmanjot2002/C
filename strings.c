@@ -12,6 +12,7 @@ int main(){
     printf("%s",name1);
     */
 
+   /*
     char r[]={'H','a','r','m','a','n'};
     printf("%s \n",r);
     char s[]={'H','a','r','m','a','n','\0'};
@@ -20,5 +21,12 @@ int main(){
     printf("\nEnter name1: ");
     gets(name1);
     printf("%s",name1);
+    */
+
+
+    char ch[5];
+    printf("Enter string: ");
+    scanf("%4s",ch);
+    printf("%s",ch);
     return 0;
 }
