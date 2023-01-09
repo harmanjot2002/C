@@ -56,6 +56,23 @@ int main(){
     printf("%s",&name[2]);
   */
     
+    /*
+    //Length of string
+    char str[30];
+    int count;
+    printf("Enter string: ");
+    gets(str);
+    count=strlen(str);
+    printf("The length of string is %d \n",count);
 
+    int cnt=0;
+    int i=0;
+    while(str[i]!='\0'){
+        cnt++;
+        i++;
+    }
+    printf("%d",cnt);
+    */
+   
     return 0;
 }
