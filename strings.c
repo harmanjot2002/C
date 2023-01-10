@@ -100,6 +100,7 @@ int main(){
   printf("%d",value);
   */
 
+ /*
   //Reverse a string
   char s1[30]="Harmanjot Kaur";
   strrev(s1);
@@ -114,5 +115,18 @@ int main(){
     s1[l-i-1]=ch;
   }
   printf("\n%s",s1);
+  */
+
+  //Convert string from upper to lower case
+  char s1[30]="$%^890Jayanti2@#";
+  strlwr(s1);
+  printf("%s\n",s1);
+
+  for(int i=0;s1[i]!='\0';i++){
+    if(s1[i]>='A' && s1[i]<='Z')
+      s1[i]=s1[i]+32;
+  }
+  printf("%s",s1);
+
   return 0;
 }
