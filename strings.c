@@ -75,8 +75,7 @@ int main(){
     */
    
    /*
-    Concatenation of 2 Strings
-   */
+    //Concatenation of 2 Strings
     char str1[30]="Harmanjot ";
     char str2[5]="Kaur";
     int len1=strlen(str1);
@@ -87,5 +86,16 @@ int main(){
       str1[len1+i]=str2[i];
     }
     printf("%s",str1);
-    return 0;
+  */
+
+  //Compare 2 strings
+  char s1[]="Hello";
+  char s2[]="Welcome";
+  int value=strcmp(s1,s2);
+  if (value==0)
+    printf("Same");
+  else
+    printf("Not same");
+  printf("%d",value);
+  return 0;
 }
