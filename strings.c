@@ -88,6 +88,7 @@ int main(){
     printf("%s",str1);
   */
 
+ /*
   //Compare 2 strings
   char s1[]="Hello";
   char s2[]="Welcome";
@@ -97,5 +98,21 @@ int main(){
   else
     printf("Not same");
   printf("%d",value);
+  */
+
+  //Reverse a string
+  char s1[30]="Harmanjot Kaur";
+  strrev(s1);
+  printf("%s",s1);
+
+  int l,i;
+  char ch;
+  l=strlen(s1);
+  for(i=0;i<l/2;i++){
+    ch=s1[i];
+    s1[i]=s1[l-i-1];
+    s1[l-i-1]=ch;
+  }
+  printf("\n%s",s1);
   return 0;
 }
