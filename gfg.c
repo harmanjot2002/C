@@ -20,13 +20,13 @@ int main(){
     int b=4;
     int c=7;
     if(a>=b && a>=c){
-        printf("a is largest");
+        printf("a is largest\n");
     }
     else if(b>=a && b>=c){
-        printf("b is largest");
+        printf("b is largest\n");
     }
     else{
-        printf("c is largest");
+        printf("c is largest\n");
     }
 
     //Leap year or not
@@ -52,13 +52,13 @@ int main(){
     switch(op){
         case(1):
             ans=x+y;
-            printf(ans);
+            printf("%d",x+y);
         case(2):
             ans=x-y;
-            printf(ans);
+            printf("%d",ans);
         case(3):
             ans=x*y;
-            printf(ans);
+            printf("%d",ans);
         default:
             printf("Invalid operation");
     }
