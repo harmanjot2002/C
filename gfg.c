@@ -5,4 +5,14 @@ int main(){
 
     float z=1.2;
     printf("%f",z);
+
+    //Day before n days
+    int d=1;
+    int n=1;
+    int mod_res=n%7;
+    int sub_res=d-mod_res;
+    if(sub_res<0)
+        sub_res+=7;
+    printf("%d",sub_res);
+    return 0;
 }
