@@ -53,12 +53,15 @@ int main(){
         case(1):
             ans=x+y;
             printf("%d",x+y);
+            break;
         case(2):
             ans=x-y;
             printf("%d",ans);
+            break;
         case(3):
             ans=x*y;
             printf("%d",ans);
+            break;
         default:
             printf("Invalid operation");
     }
