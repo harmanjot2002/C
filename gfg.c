@@ -29,6 +29,7 @@ int main(){
         printf("c is largest");
     }
 
+    //Leap year or not
     int year=2100;
     if(year%4==0 && year%100!=0)
         printf("Leap year");
