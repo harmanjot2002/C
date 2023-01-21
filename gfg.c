@@ -44,6 +44,7 @@ int main(){
     +         2 3  5
     -         2 3  -1
     *         2 3  6
+    others    2 3  invalid operation
     */
     int op,x,y,ans;
     printf("Enter operation and value of two integers\n");
@@ -54,6 +55,8 @@ int main(){
             ans=x-y;
         case(3):
             ans=x*y;
+        default:
+            printf("Invalid operation");
     }
     return 0;
 }
