@@ -51,10 +51,13 @@ int main(){
     switch(op){
         case(1):
             ans=x+y;
+            printf(ans);
         case(2):
             ans=x-y;
+            printf(ans);
         case(3):
             ans=x*y;
+            printf(ans);
         default:
             printf("Invalid operation");
     }
