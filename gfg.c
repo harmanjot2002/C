@@ -39,6 +39,12 @@ int main(){
         printf("Not leap year");
 
     //Simple Calculator
-    
+    /*
+    operation x y O/P
+    +         2 3  5
+    -         2 3  -1
+    *         2 3  6
+    */
+   
     return 0;
 }
