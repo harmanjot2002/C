@@ -34,20 +34,21 @@ int main(){
     if(year%4==0 && year%100!=0)
         printf("Leap year");
     else if(year%400==0)
-        printf("Leap year");
+        printf("Leap year\n");
     else
-        printf("Not leap year");
+        printf("Not leap year\n");
 
     //Simple Calculator
     /*
-    operation x y O/P
-    +         2 3  5
-    -         2 3  -1
-    *         2 3  6
-    others    2 3  invalid operation
+        operation x y O/P
+        +         2 3  5
+        -         2 3  -1
+        *         2 3  6
+        others    2 3  invalid operation
     */
     int op,x,y,ans;
     printf("Enter operation and value of two integers\n");
+    scanf("%d %d %d",&op,&x,&y);
     switch(op){
         case(1):
             ans=x+y;
