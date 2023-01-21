@@ -45,6 +45,8 @@ int main(){
     -         2 3  -1
     *         2 3  6
     */
-   
+    int op,x,y;
+    printf("Enter operation and value of two integers\n");
+    
     return 0;
 }
