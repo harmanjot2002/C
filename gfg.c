@@ -49,7 +49,11 @@ int main(){
     printf("Enter operation and value of two integers\n");
     switch(op){
         case(1):
-            
+            ans=x+y;
+        case(2):
+            ans=x-y;
+        case(3):
+            ans=x*y;
     }
     return 0;
 }
