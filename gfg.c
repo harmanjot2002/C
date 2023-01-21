@@ -13,6 +13,20 @@ int main(){
     int sub_res=d-mod_res;
     if(sub_res<0)
         sub_res+=7;
-    printf("%d",sub_res);
+    printf("%d \n",sub_res);
+
+    //Largest of three numbers
+    int a=2;
+    int b=4;
+    int c=7;
+    if(a>=b && a>=c){
+        printf("a is largest");
+    }
+    else if(b>=a && b>=c){
+        printf("b is largest");
+    }
+    else{
+        printf("c is largest");
+    }
     return 0;
 }
