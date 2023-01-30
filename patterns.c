@@ -1,5 +1,6 @@
 #include <stdio.h>
 void main(){
+    /*
     int n;
     printf("Enter no. of rows: ");
     scanf("%d",&n);
@@ -204,4 +205,93 @@ void main(){
         }
         printf("\n");
     }
+    */
+
+   //Javatpoint
+    /*
+        5
+        11111
+        1   1
+        1   1
+        1   1
+        11111
+    */
+   /*
+    int n;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            if(i==1 || j==1 || i==n || j==n){
+                printf("1");
+            }
+            else{
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    */
+
+
+   /*
+    5
+    12345
+    1234
+    123
+    12
+    1
+ */
+/*
+   int n;
+   scanf("%d",&n);
+   for(int i=n;i>=1;i--){
+    for(int j=1;j<=i;j++){
+        printf("%d",j);
+    }
+    printf("\n");
+   }
+*/
+
+/*
+5
+*****
+ *****
+  *****
+   *****
+    *****
+*/
+/*
+int n;
+scanf("%d",&n);
+for(int i=n;i>=1;i--){
+    for(int s=1;s<=n-i;s++){
+        printf(" ");
+    }
+    for(int j=1;j<=n;j++){
+        printf("*");
+    }
+    printf("\n");
+}
+*/
+
+/*
+5
+*********
+ ******* 
+  *****  
+   ***   
+    *  
+*/
+int n;
+scanf("%d",&n);
+for(int i=n;i>=1;i--){
+    for(int s=1;s<=n-i;s++){
+        printf(" ");
+    }
+    for(int j=2*i-1;j>=1;j--){
+        printf("*");
+    }
+    printf("\n");
+}
+
 }
