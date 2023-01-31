@@ -118,6 +118,7 @@ int main(){
   */
 
   //Convert string from upper to lower case
+  /*
   char s1[30]="$%^890Jayanti2@#";
   strlwr(s1);
   printf("%s\n",s1);
@@ -127,6 +128,9 @@ int main(){
       s1[i]=s1[i]+32;
   }
   printf("%s",s1);
-
+  */
+  char s1[30]="$%^890KhatriJayanti2@#";
+  strupr(s1);
+  printf("%s\n",s1);
   return 0;
 }
