@@ -282,7 +282,7 @@ for(int i=n;i>=1;i--){
    ***   
     *  
 */
-
+/*
 int n;
 scanf("%d",&n);
 for(int i=n;i>=1;i--){
@@ -291,6 +291,25 @@ for(int i=n;i>=1;i--){
     }
     for(int j=2*i-1;j>=1;j--){
         printf("*");
+    }
+    printf("\n");
+}*/
+
+//Pascal's Triangle
+int n,c;
+scanf("%d",&n);
+for(int i=0;i<n;i++){
+    for(int j=0;j<n-i;j++){
+        printf(" ");
+    }
+    for(int k=0;k<=i;k++){
+        if(i==0 || k==0){
+            c=1;
+        }
+        else{
+            c=(c*(i-k+1))/k;
+        }
+        printf("%d ",c);
     }
     printf("\n");
 }
