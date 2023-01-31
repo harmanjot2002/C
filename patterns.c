@@ -345,6 +345,7 @@ for(int i=1;i<=n;i++){
 */
 
 //X-Pattern
+/*
 int n;
 scanf("%d",&n);
 for(int i=1;i<=2*n-1;i++){
@@ -357,5 +358,11 @@ for(int i=1;i<=2*n-1;i++){
         }
     }
     printf("\n");
+}*/
+
+int n;
+scanf("%d",&n);
+for(int i=1;i<=2*n;i++){
+    
 }
 }
