@@ -282,6 +282,7 @@ for(int i=n;i>=1;i--){
    ***   
     *  
 */
+
 int n;
 scanf("%d",&n);
 for(int i=n;i>=1;i--){
