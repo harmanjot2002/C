@@ -212,6 +212,7 @@ int main()
     */
 
     // LCM of 2 numbers
+    /*
     int n, m;
     scanf("%d %d",&n,&m);
     int max, ans;
@@ -226,5 +227,18 @@ int main()
         }
     }
     printf("%d",ans);
+    */
+
+    int n;
+    scanf("%d", &n);
+    int a = 1;
+    int b = 1;
+    int c;
+    for (int i = 2; i <= n; i++){
+        c=a+b;
+        printf("%d",c);
+        a=b;
+        b=c;
+    }
     return 0;
 }
