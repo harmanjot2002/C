@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int nextPrime(int n){
     int flag = 1;
@@ -166,6 +167,7 @@ int main()
     */
 
    //Next prime no.
+   /*
     int n;
     scanf("%d",&n);
     for(int i=n+1;i<=n+10;i++){
@@ -173,6 +175,33 @@ int main()
             printf("Next prime is %d ",i);
             break;
         }
-    }   
+    }
+    */
+
+   //All divisors of number
+   /*
+   int n;
+   scanf("%d",&n);
+   for(int i=1;i<=n;i++){
+    if(n%i==0){
+        printf("%d ",i);
+    }
+   } 
+   */
+
+    //GCD of 2 numbers
+    int n,m;
+    scanf("%d %d",&n,&m);
+    int min,ans;
+    if(n<m)
+        min=n;
+    else  
+        min=m;
+    for(int i=1;i<=min;i++){
+        if(n%i==0 && m%i==0){
+            ans=i;
+        }
+    }
+    printf("%d",ans);
     return 0;
 }
