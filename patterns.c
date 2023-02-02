@@ -339,6 +339,7 @@ for(int i=0;i<n;i++){
    ****
     *****
 */
+/*
 int n;
 scanf("%d",&n);
 for(int i=n;i>=1;i--){
@@ -359,4 +360,29 @@ for(int i=1;i<=n;i++){
     }
     printf("\n");
 }
+*/
+
+//Plus pattern
+/*
+int n;
+scanf("%d",&n);
+for(int i=1;i<=n;i++){
+    if(i==n/2+1){
+        for(int j=1;j<=n;j++){
+            printf("+");
+        }
+    }
+    else{
+        for(int k=1;k<=n/2;k++){
+            printf(" ");
+        }
+        printf("+");
+    }
+    printf("\n");
+}
+*/
+
+//X-Pattern
+int n;
+scanf("%d",&n);
 }
