@@ -1,5 +1,6 @@
 #include <stdio.h>
-int main(){
+int main()
+{
     /*
     printf("%d \n",sizeof(3.12));
     printf("%d \n",sizeof(3.12f));
@@ -7,8 +8,8 @@ int main(){
     float z=1.2;
     printf("%f",z);
     */
-   
-    //Day before n days
+
+    // Day before n days
     /*
     int d=1;
     int n=1;
@@ -19,7 +20,7 @@ int main(){
     printf("%d \n",sub_res);
     */
 
-    //Largest of three numbers
+    // Largest of three numbers
     /*
     int a=2;
     int b=4;
@@ -35,7 +36,7 @@ int main(){
     }
     */
 
-    //Leap year or not
+    // Leap year or not
     /*
     int year=2100;
     if(year%4==0 && year%100!=0)
@@ -46,7 +47,7 @@ int main(){
         printf("Not leap year\n");
     */
 
-    //Simple Calculator
+    // Simple Calculator
     /*
         operation x y O/P
         +         2 3  5
@@ -54,28 +55,28 @@ int main(){
         *         2 3  6
         others    2 3  invalid operation
     */
-   /*
-    int op,x,y,ans;
-    printf("Enter operation and value of two integers\n");
-    scanf("%d %d %d",&op,&x,&y);
-    switch(op){
-        case(1):
-            ans=x+y;
-            printf("%d",x+y);
-            break;
-        case(2):
-            ans=x-y;
-            printf("%d",ans);
-            break;
-        case(3):
-            ans=x*y;
-            printf("%d",ans);
-            break;
-        default:
-            printf("Invalid operation");
-    }
-    */
-    //Smallest Divisor  
+    /*
+     int op,x,y,ans;
+     printf("Enter operation and value of two integers\n");
+     scanf("%d %d %d",&op,&x,&y);
+     switch(op){
+         case(1):
+             ans=x+y;
+             printf("%d",x+y);
+             break;
+         case(2):
+             ans=x-y;
+             printf("%d",ans);
+             break;
+         case(3):
+             ans=x*y;
+             printf("%d",ans);
+             break;
+         default:
+             printf("Invalid operation");
+     }
+     */
+    // Smallest Divisor
     /*
     int n;
     scanf("%d",&n);
@@ -87,14 +88,63 @@ int main(){
     }
     */
 
-    //Print all the numbers from 1 to 10 that are not muliple of 3
+    // Print all the numbers from 1 to 10 that are not muliple of 3
+    /*
     for(int i=1;i<=10;i++){
         if(i%3==0){
             continue;
         }
         printf("%d ",i);
     }
+    */
 
+    // Print tables of first n natural numbers
+    /*
+    int n;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=10;j++){
+            printf("%d",i*j);
+        }
+        printf("\n");
+    }
+    */
 
+    // Factorial of a number
+    /*
+    int n;
+    scanf("%d",&n);
+    int fact=1;
+    for(int i=1;i<=n;i++){
+        fact*=i;
+    }
+    printf("%d",fact);
+    */
+
+    // Given number is prime or not
+    /*
+    int n;
+    int flag = 1;
+    scanf("%d", &n);
+    if (n == 0 || n == 1){
+        printf("Not prime");
+    }
+    for(int i=2;i<n;i++){
+        if(n%i==0){
+            flag=1;
+            break;
+        }
+        else{
+            flag=0;
+        }
+    }
+    if(flag==1)
+        printf("Not prime");
+    else    
+        printf("Prime");
+    */
+
+   //Next prime no.
+   int n;
     return 0;
 }
