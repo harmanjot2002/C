@@ -256,7 +256,7 @@ int main()
      printf("%d",count);
      */
 
-    //Table of a number 'n' upto 'm' index 
+    // Table of a number 'n' upto 'm' index
     /*
     int n, m;
     scanf("%d %d", &n, &m);
@@ -265,7 +265,7 @@ int main()
     }
     */
 
-    //Size and number of elements in array
+    // Size and number of elements in array
     /*
     int arr[]={3,4,5,6,7};
     int sz=sizeof(arr);
@@ -274,44 +274,73 @@ int main()
     printf("%zu",cnt);
     */
 
-   //Check sorted array
-   /*
-   int n;
-   scanf("%d",&n);
-   int flag=1;
-   int arr[n];
-   for(int i=0;i<n;i++){
-    scanf("%d",&arr[i]);
-   }
-   for(int i=1;i<n;i++){
-    if(arr[i]<arr[i-1]){
-        flag=0;
-        break;
+    // Check sorted array
+    /*
+    int n;
+    scanf("%d",&n);
+    int flag=1;
+    int arr[n];
+    for(int i=0;i<n;i++){
+     scanf("%d",&arr[i]);
     }
-   }
-   if(flag==0){
-        printf("Not sorted\n");
-   }
-   else{
-    printf("Sorted\n");
-   }
-   */
+    for(int i=1;i<n;i++){
+     if(arr[i]<arr[i-1]){
+         flag=0;
+         break;
+     }
+    }
+    if(flag==0){
+         printf("Not sorted\n");
+    }
+    else{
+     printf("Sorted\n");
+    }
+    */
 
-    //Count distinct elements in array
+    // Count distinct elements in array
+    /*
     int n;
     int count=0;
     scanf("%d",&n);
     int arr[n];
+    int freq[]={0};
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
     for(int i=0;i<n;i++){
-        for(int j=i+1;j<n;j++){
-            if(arr[i]!=arr[j]){
-                count++;
-            }
-        }
+        for(int )
     }
     printf("%d",count);
+    */
+
+    // Sum and average of array
+    /*
+    int n,sum=0;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+        sum+=arr[i];
+    }
+    printf("%d\n",sum);
+    float avg=sum/n;
+    printf("%g",avg);
+    */
+
+    // Maximum in an array
+    int n;
+    scanf("%d", &n);
+    int arr[n];
+    int max;
+    for (int i = 0; i < n; i++){
+        scanf("%d", &arr[i]);
+    }
+    for (int i = 1; i < n; i++){
+        if (arr[i] > arr[i - 1]){
+            max = arr[i];
+        }
+    }
+    printf("%d", max);
+
     return 0;
 }
