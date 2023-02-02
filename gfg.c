@@ -1,4 +1,25 @@
 #include <stdio.h>
+
+int nextPrime(int n){
+    int flag = 1;
+    if (n == 0 || n == 1){
+        printf("Not prime");
+    }
+    for(int i=2;i<n;i++){
+        if(n%i==0){
+            flag=1;
+            break;
+        }
+        else{
+            flag=0;
+        }
+    }
+    if(flag==1)
+        return 1;
+    else    
+        return 0;
+}
+
 int main()
 {
     /*
@@ -145,6 +166,13 @@ int main()
     */
 
    //Next prime no.
-   int n;
+    int n;
+    scanf("%d",&n);
+    for(int i=n+1;i<=n+10;i++){
+        if(nextPrime(i)==0){
+            printf("Next prime is %d ",i);
+            break;
+        }
+    }   
     return 0;
 }
