@@ -328,6 +328,7 @@ int main()
     */
 
     // Maximum in an array
+    /*
     int n;
     scanf("%d", &n);
     int arr[n];
@@ -341,6 +342,7 @@ int main()
         }
     }
     printf("%d", max);
+    */
 
     return 0;
 }
