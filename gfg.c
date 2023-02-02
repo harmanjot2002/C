@@ -229,16 +229,37 @@ int main()
     printf("%d",ans);
     */
 
-    int n;
-    scanf("%d", &n);
-    int a = 1;
-    int b = 1;
-    int c;
-    for (int i = 2; i <= n; i++){
-        c=a+b;
-        printf("%d",c);
-        a=b;
-        b=c;
+    // Fibonacci series
+    /*
+     int n;
+     scanf("%d", &n);
+     int a = 1;
+     int b = 1;
+     int c;
+     for (int i = 2; i <= n; i++){
+         c=a+b;
+         printf("%d ",c);
+         a=b;
+         b=c;
+     }
+     */
+
+    // Count number of digits in a number
+    /*
+     int n;
+     scanf("%d",&n);
+     int count=0;
+     while(n!=0){
+         n=n/10;
+         count++;
+     }
+     printf("%d",count);
+     */
+
+    int n, m;
+    scanf("%d %d", &n, &m);
+    for (int i = 1; i <= m; i++){
+        printf("%d ",n*i);
     }
     return 0;
 }
