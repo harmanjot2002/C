@@ -265,6 +265,11 @@ int main()
     }
     */
 
-   
+    //Size and number of elements in array
+    int arr[]={3,4,5,6,7};
+    int sz=sizeof(arr);
+    printf("%zu\n",sz);
+    int cnt=sizeof(arr)/sizeof(arr[0]);
+    printf("%zu",cnt);
     return 0;
 }
