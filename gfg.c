@@ -266,10 +266,44 @@ int main()
     */
 
     //Size and number of elements in array
+    /*
     int arr[]={3,4,5,6,7};
     int sz=sizeof(arr);
     printf("%zu\n",sz);
     int cnt=sizeof(arr)/sizeof(arr[0]);
     printf("%zu",cnt);
+    */
+
+   //Check sorted array
+   /*
+   int n;
+   scanf("%d",&n);
+   int flag=1;
+   int arr[n];
+   for(int i=0;i<n;i++){
+    scanf("%d",&arr[i]);
+   }
+   for(int i=1;i<n;i++){
+    if(arr[i]<arr[i-1]){
+        flag=0;
+        break;
+    }
+   }
+   if(flag==0){
+        printf("Not sorted\n");
+   }
+   else{
+    printf("Sorted\n");
+   }
+   */
+
+    //Count distinct elements in array
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    
     return 0;
 }
