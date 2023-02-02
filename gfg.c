@@ -1,23 +1,28 @@
 #include <stdio.h>
 #include <math.h>
 
-int nextPrime(int n){
+int nextPrime(int n)
+{
     int flag = 1;
-    if (n == 0 || n == 1){
+    if (n == 0 || n == 1)
+    {
         printf("Not prime");
     }
-    for(int i=2;i<n;i++){
-        if(n%i==0){
-            flag=1;
+    for (int i = 2; i < n; i++)
+    {
+        if (n % i == 0)
+        {
+            flag = 1;
             break;
         }
-        else{
-            flag=0;
+        else
+        {
+            flag = 0;
         }
     }
-    if(flag==1)
+    if (flag == 1)
         return 1;
-    else    
+    else
         return 0;
 }
 
@@ -162,44 +167,62 @@ int main()
     }
     if(flag==1)
         printf("Not prime");
-    else    
+    else
         printf("Prime");
     */
 
-   //Next prime no.
-   /*
+    // Next prime no.
+    /*
+     int n;
+     scanf("%d",&n);
+     for(int i=n+1;i<=n+10;i++){
+         if(nextPrime(i)==0){
+             printf("Next prime is %d ",i);
+             break;
+         }
+     }
+     */
+
+    // All divisors of number
+    /*
     int n;
     scanf("%d",&n);
-    for(int i=n+1;i<=n+10;i++){
-        if(nextPrime(i)==0){
-            printf("Next prime is %d ",i);
-            break;
-        }
+    for(int i=1;i<=n;i++){
+     if(n%i==0){
+         printf("%d ",i);
+     }
     }
     */
 
-   //All divisors of number
-   /*
-   int n;
-   scanf("%d",&n);
-   for(int i=1;i<=n;i++){
-    if(n%i==0){
-        printf("%d ",i);
-    }
-   } 
-   */
-
-    //GCD of 2 numbers
+    // GCD of 2 numbers
+    /*
     int n,m;
     scanf("%d %d",&n,&m);
     int min,ans;
     if(n<m)
         min=n;
-    else  
+    else
         min=m;
     for(int i=1;i<=min;i++){
         if(n%i==0 && m%i==0){
             ans=i;
+        }
+    }
+    printf("%d",ans);
+    */
+
+    // LCM of 2 numbers
+    int n, m;
+    scanf("%d %d",&n,&m);
+    int max, ans;
+    if (n > m)
+        max = n;
+    else
+        max=m;
+    for(int i=max;i<=m*n;i++){
+        if(i%m==0 && i%n==0){
+            ans=i;
+            break;
         }
     }
     printf("%d",ans);
