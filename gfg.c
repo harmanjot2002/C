@@ -298,20 +298,17 @@ int main()
     */
 
     // Count distinct elements in array
-    /*
+    
     int n;
     int count=0;
     scanf("%d",&n);
     int arr[n];
-    int freq[]={0};
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    for(int i=0;i<n;i++){
-        for(int )
-    }
+
     printf("%d",count);
-    */
+    
 
     // Sum and average of array
     /*
