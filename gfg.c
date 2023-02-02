@@ -1,12 +1,15 @@
 #include <stdio.h>
 int main(){
+    /*
     printf("%d \n",sizeof(3.12));
     printf("%d \n",sizeof(3.12f));
 
     float z=1.2;
     printf("%f",z);
-
+    */
+   
     //Day before n days
+    /*
     int d=1;
     int n=1;
     int mod_res=n%7;
@@ -14,8 +17,10 @@ int main(){
     if(sub_res<0)
         sub_res+=7;
     printf("%d \n",sub_res);
+    */
 
     //Largest of three numbers
+    /*
     int a=2;
     int b=4;
     int c=7;
@@ -28,8 +33,10 @@ int main(){
     else{
         printf("c is largest\n");
     }
+    */
 
     //Leap year or not
+    /*
     int year=2100;
     if(year%4==0 && year%100!=0)
         printf("Leap year");
@@ -37,6 +44,7 @@ int main(){
         printf("Leap year\n");
     else
         printf("Not leap year\n");
+    */
 
     //Simple Calculator
     /*
@@ -46,6 +54,7 @@ int main(){
         *         2 3  6
         others    2 3  invalid operation
     */
+   /*
     int op,x,y,ans;
     printf("Enter operation and value of two integers\n");
     scanf("%d %d %d",&op,&x,&y);
@@ -65,5 +74,27 @@ int main(){
         default:
             printf("Invalid operation");
     }
+    */
+    //Smallest Divisor  
+    /*
+    int n;
+    scanf("%d",&n);
+    for(int i=2;i<=n;i++){
+        if(n%i==0){
+            printf("Smallest divisor is %d ",i);
+            break;
+        }
+    }
+    */
+
+    //Print all the numbers from 1 to 10 that are not muliple of 3
+    for(int i=1;i<=10;i++){
+        if(i%3==0){
+            continue;
+        }
+        printf("%d ",i);
+    }
+
+
     return 0;
 }
