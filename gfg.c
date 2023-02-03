@@ -298,7 +298,7 @@ int main()
     */
 
     // Count distinct elements in array
-    
+    /*
     int n;
     int count=0;
     scanf("%d",&n);
@@ -307,7 +307,7 @@ int main()
         scanf("%d",&arr[i]);
     }
     printf("%d",count);
-    
+    */
 
     // Sum and average of array
     /*
