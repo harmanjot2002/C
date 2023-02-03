@@ -26,6 +26,20 @@ int nextPrime(int n)
         return 0;
 }
 
+void fun(int arr[]){
+    int n=sizeof(arr)/sizeof(arr[0]);
+    for(int i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+}
+
+void fun2(int arr[],int n){
+    // int n=sizeof(arr)/sizeof(arr[0]);
+    for(int i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+}
+
 int main()
 {
     /*
@@ -358,5 +372,16 @@ int main()
         printf("\n");
     }
     */
+
+   //Array parameters and pointers
+    int arr[]={10,20,30,40};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    for(int i=0;i<n;i++){
+        printf("%d ",arr[i]);
+    }
+    printf("\n");
+    fun(arr);
+    printf("\n");
+    fun2(arr,n);
     return 0;
 }
