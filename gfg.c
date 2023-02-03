@@ -306,7 +306,6 @@ int main()
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-
     printf("%d",count);
     
 
@@ -341,5 +340,23 @@ int main()
     printf("%d", max);
     */
 
+   //Transpose of a matrix
+   /*
+   int m,n;
+   scanf("%d %d",&m,&n);
+   int arr[m][n];
+    // int arr[3][4]={{1,1,1,1},{2,2,2,2},{3,3,3,3}};
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            printf("%d ",arr[j][i]);
+        }
+        printf("\n");
+    }
+    */
     return 0;
 }
