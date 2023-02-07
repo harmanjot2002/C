@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-
+/*
 int nextPrime(int n)
 {
     int flag = 1;
@@ -39,7 +39,7 @@ void fun2(int arr[],int n){
         printf("%d ",arr[i]);
     }
 }
-
+*/
 int main()
 {
     /*
@@ -374,6 +374,7 @@ int main()
     */
 
    //Array parameters and pointers
+   /*
     int arr[]={10,20,30,40};
     int n=sizeof(arr)/sizeof(arr[0]);
     for(int i=0;i<n;i++){
@@ -383,5 +384,28 @@ int main()
     fun(arr);
     printf("\n");
     fun2(arr,n);
-    return 0;
+    */
+
+   //Check Armstrong Numbers
+    int n;
+    scanf("%d",&n);
+    int cnt=0;
+    int x=n;
+    while(x>0){
+        cnt++;
+        x=x/10;
+    }
+    printf("%d",n);
+    printf("\n%d",cnt);
+    int m=n;
+    int rem=1;
+    int sum=0;
+    while(m>=0){
+        rem=m%10;
+        m=m/10;
+        sum+=pow(rem,cnt);
+    }
+    printf("\n%d",sum);
+
+    // return 0;
 }
