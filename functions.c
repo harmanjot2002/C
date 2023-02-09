@@ -62,6 +62,7 @@ void fact(int n){
     printf("%d",fact);
 }
 
+
 void word(int m){
     while(m>0){
         switch(m%10){
