@@ -12,39 +12,21 @@ int main(){
     scanf("%d",&n);
     int cnt=0;
     int x=n;
-    int m=n;
     while(x>0){
         cnt++;
         x=x/10;
     }
     printf("%d\n",cnt);
-    printf("%d\n",m);
-    int rem=0;
-    int sum=0;
+    printf("%d\n",n);
+    int rem;
+    float sum=0;
+    int m=n;
     while(m>0){
         rem=m%10;
         m=m/10;
-        sum+=pow(rem,cnt);
-        printf("%d ",sum);
+        float power=pow(rem,cnt);
+        sum=sum+power;
     }
-    printf("%d\n",sum);
-    // int n;
-    // int rem=1;
-    // int sum=0;
-    // scanf("%d",&n);
-    // int cnt=0;
-    // int x=n;
-    // while(x>0){
-    //     cnt++;
-    //     x=x/10;
-    // }
-    // printf("%d",n);
-    // printf("\n%d",cnt);
-    // while(n>0){
-    //     rem=n%10;
-    //     n=n/10;
-    //     sum=sum+pow(rem,cnt);
-    // }
-    // printf("\n%d",sum);
+    printf("%.0f\n",sum);
     return 0;
 }
