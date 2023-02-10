@@ -1,5 +1,19 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdbool.h>
+
+void prime(int n){
+    int c=2;
+    while(n>1){
+        if(n%c==0){
+            printf("%d ",c);
+            n/=c;
+        }
+        else{
+            c++;
+        }
+    }
+}
 
 int main(){
     //Built-in functions
@@ -34,6 +48,7 @@ int main(){
     // fun(10);
 
     //Find first digit of a number
+    /*
     int n;
     printf("\n");
     scanf("%d",&n);
@@ -41,6 +56,13 @@ int main(){
         n=n/10;
     }
     printf("%d",n);
+    */
+
+   //Prime factors of a number
+    int n;
+    printf("\n");
+    scanf("%d",&n); 
+    prime(n);
     return 0;
 }
 
