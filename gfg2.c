@@ -7,6 +7,7 @@ int main(){
     printf("%f %f",pow(a,b),log10(c));
 
     //Check Armstrong Number
+    /*
     printf("\nEnter value of n: ");
     int n;
     scanf("%d",&n);
@@ -28,8 +29,18 @@ int main(){
         sum=sum+power;
     }
     printf("%.0f\n",sum);
+    */
 
-    fun(10);
+    // fun(10);
+
+    //Find first digit of a number
+    int n;
+    printf("\n");
+    scanf("%d",&n);
+    while(n>10){
+        n=n/10;
+    }
+    printf("%d",n);
     return 0;
 }
 
