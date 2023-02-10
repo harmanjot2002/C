@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdbool.h>
+#include <stdlib.h>
 
 void prime(int n){
     int c=2;
@@ -13,6 +14,11 @@ void prime(int n){
             c++;
         }
     }
+}
+int cmp(const void *p1,const void *p2){
+    int x1=*(const int*) p1;
+    int x2=*(const int*) p2;
+    return (x1-x2);
 }
 
 int main(){
@@ -59,10 +65,19 @@ int main(){
     */
 
    //Prime factors of a number
+   /*
     int n;
     printf("\n");
     scanf("%d",&n); 
     prime(n);
+    */
+
+   int arr[]={-20,10,-30,5};
+   printf("\n");
+   qsort(arr,4,sizeof(arr[0]),cmp);
+   for(int i=0;i<4;i++){
+    printf("%d ",arr[i]);
+   }
     return 0;
 }
 
