@@ -2,7 +2,12 @@
 #include <math.h>
 
 int main(){
+    //Built-in functions
+    double a=2,b=4,c=100;
+    printf("%f %f",pow(a,b),log10(c));
+
     //Check Armstrong Number
+    printf("\nEnter value of n: ");
     int n;
     scanf("%d",&n);
     int cnt=0;
