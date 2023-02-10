@@ -28,5 +28,11 @@ int main(){
         sum=sum+power;
     }
     printf("%.0f\n",sum);
+
+    fun(10);
     return 0;
+}
+
+void fun(int x){
+    printf("Value of x is %d ",x);
 }
