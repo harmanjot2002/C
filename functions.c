@@ -6,8 +6,11 @@ void sub();
 void add1(int a1,int b1);
 void fact(int n);
 void word(int m);
+void prime(int n);
+
 
 void main(){
+    /*
     display();
     printf("\n");
     add();
@@ -31,6 +34,18 @@ void main(){
     }
     m=rev;
     word(m);
+    */
+
+   //Prime factors of a number
+   /*
+        100
+        2 2 5 5 
+   */
+    int n;
+    printf("\n");
+    scanf("%d",&n); 
+    prime(n);
+
 }
 
 void display(){
@@ -98,5 +113,18 @@ void word(int m){
                 break;
         }
         m=m/10;
+    }
+}
+
+void prime(int n){
+    int c=2;
+    while(n>1){
+        if(n%c==0){
+            printf("%d ",c);
+            n/=c;
+        }
+        else{
+            c++;
+        }
     }
 }
