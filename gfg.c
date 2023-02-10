@@ -386,26 +386,5 @@ int main()
     fun2(arr,n);
     */
 
-   //Check Armstrong Numbers
-    int n;
-    scanf("%d",&n);
-    int cnt=0;
-    int x=n;
-    while(x>0){
-        cnt++;
-        x=x/10;
-    }
-    printf("%d",n);
-    printf("\n%d",cnt);
-    int m=n;
-    int rem=1;
-    int sum=0;
-    while(m>=0){
-        rem=m%10;
-        m=m/10;
-        sum+=pow(rem,cnt);
-    }
-    printf("\n%d",sum);
-
     // return 0;
 }

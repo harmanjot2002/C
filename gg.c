@@ -2,6 +2,7 @@
 #include <math.h>
 
 int main(){
+    //Check Armstrong Number
     int n;
     int rem=1;
     int sum=0;
