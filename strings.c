@@ -205,15 +205,17 @@ int main(){
 
  //Check palindrome of a string
  char s[50];
- printf("Enter a string \n");
- fgets(s,50,stdin);
+ printf("Enter a string: \n");
+ scanf("%s",s);
  char *s2=strrev(s);
  printf("%s",s2);
- if(strcmp(s,s2)!=0){
-  printf("Not Palindrome");
+ int val=strcmp(s,s2);
+ printf("%d",val);
+ if(val==0){
+  printf("\nPalindrome");
  }
  else{
-  printf("Palindrome");
+  printf("\nNot Palindrome");
  }
   return 0;
 }
