@@ -69,9 +69,9 @@ int main(){
    
     //Sort an array
     int n2;
-    int arr2[n2];
     printf("Enter elements in array: ");
     scanf("%d",&n2);
+    int arr2[n2];
     for(int i=0;i<n2;i++){
         scanf("%d",&arr2[i]);
     }
@@ -85,7 +85,7 @@ int main(){
         }
     }
     for(int i=0;i<n2;i++){
-        printf("%d",arr2[i]);
+        printf("%d ",arr2[i]);
     }
     return 0;
 }
