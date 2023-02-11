@@ -129,8 +129,26 @@ int main(){
   }
   printf("%s",s1);
   */
+
+  /*
   char s1[30]="$%^890KhatriJayanti2@#";
   strupr(s1);
   printf("%s\n",s1);
+  */
+
+  //Pattern Searching
+  char s[]="ABCCABC";
+  char p[]="ABC";
+  int m=strlen(p);
+  int n=strlen(s);
+  for(int i=0;i<=n-m;i++){
+    int j;
+    for(j=0;j<m;j++){
+      if(s[i+j]!=p[j])
+        break;
+    }
+    if(j==m)
+      printf("Pattern found at index %d \n ",i);
+  }
   return 0;
 }
