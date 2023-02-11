@@ -202,5 +202,18 @@ int main(){
     p=strstr(p+1,pat);
   }
   */
+
+ //Check palindrome of a string
+ char s[50];
+ printf("Enter a string \n");
+ fgets(s,50,stdin);
+ char *s2=strrev(s);
+ printf("%s",s2);
+ if(strcmp(s,s2)!=0){
+  printf("Not Palindrome");
+ }
+ else{
+  printf("Palindrome");
+ }
   return 0;
 }
