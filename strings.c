@@ -156,10 +156,17 @@ int main(){
   }
 
   //Check if s2 is prefix of s1 or not
+  /*
+    Enter 2 strings:
+    abcdef
+    abc
+    Yes
+  */
   char s1[50];
   char s2[50];
-  fgets(s1,50,stdin);
-  fgets(s2,50,stdin);
+  printf("Enter 2 strings:\n");
+  scanf("%s",s1);
+  scanf("%s",s2);
   if(strncmp(s1,s2,strlen(s2))==0)
     printf("Yes");
   else
