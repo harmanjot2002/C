@@ -155,5 +155,7 @@ int main(){
       printf("Pattern found at index %d \n ",i);
   }
 
+  //Check if s2 is prefix of s1 or not
+  
   return 0;
 }
