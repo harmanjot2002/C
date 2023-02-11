@@ -188,6 +188,9 @@ int main(){
     printf("Not found");
   }
   */
+
+ //For all occurences
+  /*
   char txt[]="geeks for geeks";
   char pat[]="eek";
   char *p=strstr(txt,pat);
@@ -198,8 +201,6 @@ int main(){
     printf("Occurence is at index %d\n",p-txt);
     p=strstr(p+1,pat);
   }
-  // else{
-  //   printf("Not found");
-  // }
+  */
   return 0;
 }
