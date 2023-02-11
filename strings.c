@@ -156,6 +156,13 @@ int main(){
   }
 
   //Check if s2 is prefix of s1 or not
-  
+  char s1[50];
+  char s2[50];
+  fgets(s1,50,stdin);
+  fgets(s2,50,stdin);
+  if(strncmp(s1,s2,strlen(s2))==0)
+    printf("Yes");
+  else
+    printf("No");
   return 0;
 }
