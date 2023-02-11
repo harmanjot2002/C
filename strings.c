@@ -137,6 +137,10 @@ int main(){
   */
 
   //Pattern Searching
+  /*
+    Pattern found at index 0 
+    Pattern found at index 4  
+  */
   char s[]="ABCCABC";
   char p[]="ABC";
   int m=strlen(p);
@@ -150,6 +154,6 @@ int main(){
     if(j==m)
       printf("Pattern found at index %d \n ",i);
   }
-  
+
   return 0;
 }
