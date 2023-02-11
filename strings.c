@@ -177,6 +177,7 @@ int main(){
   */
 
   //Substring search
+  /*
   char txt[]="geeks for geeks";
   char pat[]="eek";
   char *p=strstr(txt,pat);
@@ -186,5 +187,19 @@ int main(){
   else{
     printf("Not found");
   }
+  */
+  char txt[]="geeks for geeks";
+  char pat[]="eek";
+  char *p=strstr(txt,pat);
+  if(p==NULL){
+    printf("Not found");
+  }
+  while(p){
+    printf("Occurence is at index %d\n",p-txt);
+    p=strstr(p+1,pat);
+  }
+  // else{
+  //   printf("Not found");
+  // }
   return 0;
 }
