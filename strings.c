@@ -141,6 +141,7 @@ int main(){
     Pattern found at index 0 
     Pattern found at index 4  
   */
+ /*
   char s[]="ABCCABC";
   char p[]="ABC";
   int m=strlen(p);
@@ -154,6 +155,7 @@ int main(){
     if(j==m)
       printf("Pattern found at index %d \n ",i);
   }
+  */
 
   //Check if s2 is prefix of s1 or not
   /*
@@ -162,6 +164,7 @@ int main(){
     abc
     Yes
   */
+  /*
   char s1[50];
   char s2[50];
   printf("Enter 2 strings:\n");
@@ -171,5 +174,17 @@ int main(){
     printf("Yes");
   else
     printf("No");
+  */
+
+  //Substring search
+  char txt[]="geeks for geeks";
+  char pat[]="eek";
+  char *p=strstr(txt,pat);
+  if(p){
+    printf("First occurance is at index %d",p-txt);
+  }
+  else{
+    printf("Not found");
+  }
   return 0;
 }
