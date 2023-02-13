@@ -68,6 +68,7 @@ int main(){
 
    
     //Sort an array
+    /*
     int n2;
     printf("Enter elements in array: ");
     scanf("%d",&n2);
@@ -86,6 +87,43 @@ int main(){
     }
     for(int i=0;i<n2;i++){
         printf("%d ",arr2[i]);
+    }
+    */
+
+   //Sum of 2 matrix
+   /*
+    int a[2][3],b[2][3],c[2][3],i,j;
+    for(i=0;i<2;i++){
+        for(j=0;j<3;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<2;i++){
+        for(j=0;j<3;j++){
+            scanf("%d",&b[i][j]);
+        }
+    }
+    for(i=0;i<2;i++){
+        for(j=0;j<3;j++){
+            c[i][j]=a[i][j]+b[i][j];
+            printf("%d ",c[i][j]);
+        }
+        printf("\n");
+    }
+    */
+
+   //Transpose of a matrix
+    int arr[2][3];
+    for(int i=0;i<2;i++){
+        for(int j=0;j<3;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    for(int i=0;i<3;i++){
+        for(int j=0;j<2;j++){
+            printf("%d ",arr[j][i]);
+        }
+        printf("\n");
     }
     return 0;
 }
