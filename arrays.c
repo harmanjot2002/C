@@ -113,6 +113,7 @@ int main(){
     */
 
    //Transpose of a matrix
+   /*
     int arr[2][3];
     for(int i=0;i<2;i++){
         for(int j=0;j<3;j++){
@@ -125,5 +126,65 @@ int main(){
         }
         printf("\n");
     }
+    */
+
+   //Find maximum and second maximum in an array of 3*3
+   
+   int arr[3][3];
+   int mx=0;
+   int sm=0;
+   int i,j;
+    for(i=0;i<3;i++){
+    for(j=0;j<3;j++){
+        scanf("%d",&arr[i][j]);
+    }
+   }
+   for(i=0;i<3;i++){
+    for(j=0;j<3;j++){
+        if(arr[i][j]>mx){
+            sm=mx;
+            mx=arr[i][j];
+        }
+        else if(arr[i][j]<mx && arr[i][j]>sm){
+            sm=arr[i][j];
+        }
+    }
+   }
+   printf("%d %d",mx,sm);
+   
+
+  //Multiplication of 2 matrices
+  /*
+  int a[3][3];
+  int b[3][3];
+  int c[3][3];
+  int i,j,k,sum;
+  printf("Enter elemens of first matrix:\n");
+  for(i=0;i<3;i++){
+    for(j=0;j<3;j++){
+        scanf("%d",&a[i][j]);
+    }
+  }
+  printf("Enter elemens of second matrix:\n");
+  for(i=0;i<3;i++){
+    for(j=0;j<3;j++){
+        scanf("%d",&b[i][j]);
+    }
+  }
+  for(i=0;i<3;i++){
+    for(j=0;j<3;j++){
+        sum=0;
+        for(k=0;k<3;k++){
+            sum=sum+(a[i][k]*b[k][j]);
+        }
+        c[i][j]=sum;
+    }
+  }
+  for(i=0;i<3;i++){
+    for(j=0;j<3;j++){
+       printf("%d ",c[i][j]);
+    }
+  }
+  */
     return 0;
 }
