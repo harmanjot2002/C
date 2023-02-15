@@ -204,6 +204,7 @@ int main(){
   */
 
  //Check palindrome of a string
+ /*
  char s[50];
  printf("Enter a string: \n");
  scanf("%s",s);
@@ -217,5 +218,15 @@ int main(){
  else{
   printf("\nNot Palindrome");
  }
+ */
+
+int sz;
+scanf("%d",&sz);
+char fname[sz];
+char lname[sz];
+scanf("%s",fname);
+scanf("%s",lname);
+printf("%s %s",fname,lname);
+
   return 0;
 }
