@@ -220,6 +220,7 @@ int main(){
  }
  */
 
+/*
 int sz;
 scanf("%d",&sz);
 char fname[sz];
@@ -227,6 +228,42 @@ char lname[sz];
 scanf("%s",fname);
 scanf("%s",lname);
 printf("%s %s",fname,lname);
+*/
 
+/*
+char fullName[50];
+gets(fullName);
+printf("%s",fullName);
+*/
+
+/*
+char fullName[5];
+scanf("%4s",fullName);
+printf("%s",fullName);
+*/
+/*
+  Harmanjot Kaur
+  Harm
+*/
+
+/*
+char fullName[5];
+scanf("%s",fullName);
+printf("%10.5s",fullName);
+*/
+/*
+  Harmanjot Kaur
+     Harma
+*/
+
+char str[50];
+// fgets(str,sizeof(str),stdin);
+gets(str);
+int cnt=0;
+for(int i=0;str[i]!='\0';i++){
+  if(str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u')
+    cnt++;
+}
+printf("%d",cnt);
   return 0;
 }
