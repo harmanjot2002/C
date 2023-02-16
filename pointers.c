@@ -28,10 +28,26 @@ int main()
     printf("%d\n",*(p+2)-2);
     printf("%d\n",*(p++ -2)-1);
     */
+   /*
+    int var=5;
+    printf("%d\n",var);
+    printf("%p",&var);
+    */
 
-   const int a=-11;
-   int *p=&a;
-   *p=10;
-   printf("%d",a);
-    return 0;
+//    int *pc,c;
+//    c=5;
+//    pc=&c;
+//    c=1;
+//    printf("%d\n",*pc);
+//    printf("%d",c);
+
+    int *pc,c;
+    c = 22;
+
+    pc = &c;
+    printf("Address of pointer pc: %p\n",pc);
+    printf("Content of pointer pc is %d \n",*pc);
+    
+    
+   return 0;
 }
