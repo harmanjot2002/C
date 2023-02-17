@@ -37,7 +37,7 @@ int main(){
     */
 
    
-    //Sum of individual rows and columns
+    //Sum of individual rows and columns when nc==nr
     /*
         I/P:1 2 1 2 3 5 0 5 -1
         O/P:sr=4,sc=3 
@@ -46,6 +46,7 @@ int main(){
     */
    /*
     int a[3][3],i,j,sc,sr;
+    printf("Enter values for first matrix:\n");
     for(i=0;i<3;i++){
         for(j=0;j<3;j++){
             scanf("%d",&a[i][j]);
@@ -61,7 +62,72 @@ int main(){
     }
     */
 
+   //Sum of individual rows and columns when nc!=nr
+    /*
+    Enter values of first matrix: 1 2 3 1 0 1
+    Sum of 0th row is 6 
+    Sum of 1th row is 2 
+    Sum of 0th column is 2      
+    Sum of 1th column is 2      
+    Sum of 2th column is 4 
+   */
+   /*
+    int a[2][3],i,j;
+    printf("Enter values of first matrix: ");
+    for(int i=0;i<2;i++){
+        for(int j=0;j<3;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(int i=0;i<2;i++){
+        int sr=0;
+        for(int j=0;j<3;j++){
+            sr+=a[i][j];
+        }
+        printf("Sum of %dth row is %d \n",i,sr);
+    }
+    for(int i=0;i<3;i++){
+        int sc=0;
+        for(int j=0;j<2;j++){
+            sc+=a[j][i];
+        }
+        printf("Sum of %dth column is %d \n",i,sc);
+    }
+    */
 
+   //Sum of individual rows and average of columns when nc!=nr
+   /*
+    Enter values of first matrix: 1 2 3 1 0 1
+    Sum of 0th row is 6 
+    Sum of 1th row is 2 
+    Average of 0th column is 1      
+    Average of 1th column is 1      
+    Average of 2th column is 2 
+   */
+  /*
+    int a[2][3],i,j;
+    printf("Enter values of first matrix: ");
+    for(int i=0;i<2;i++){
+        for(int j=0;j<3;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(int i=0;i<2;i++){
+        int sr=0;
+        for(int j=0;j<3;j++){
+            sr+=a[i][j];
+        }
+        printf("Sum of %dth row is %d \n",i,sr);
+    }
+    for(int i=0;i<3;i++){
+        int sc=0;
+        for(int j=0;j<2;j++){
+            sc+=a[j][i];
+        }
+        printf("Average of %dth column is %d \n",i,sc/2);
+    }
+    */
+   
     //Sum of 2 matrices
     /*
         Enter values of first matrix: 1 2 3 1 0 1
