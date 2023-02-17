@@ -103,6 +103,7 @@ int main(){
     -1      2 
     16      45
    */
+  /*
     int a[3][3],b[3][2],c[3][2],i,j,k,sum;
     printf("Enter values of first matrix: ");
     for(i=0;i<3;i++){
@@ -132,5 +133,6 @@ int main(){
         }
         printf("\n");
     }
+    */
     return 0;
 }
