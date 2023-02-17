@@ -41,14 +41,18 @@ int main()
 //    printf("%d\n",*pc);
 //    printf("%d",c);
 
-    int *pc,c;
-    c = 22;
-
-    pc = &c;
-    printf("Address of pointer pc: %p\n",pc);
-    printf("Content of pointer pc is %d \n",*pc);
-    
-    
+/*
+    6422292
+    0
+    6422288
+*/
+/*
+   int a[]={3,2,67,0,56};
+   int *p=&a[3];
+   printf("%d\n",p);
+   printf("%d\n",*p--);
+   printf("%d\n",p);
+*/
     
    return 0;
 }
