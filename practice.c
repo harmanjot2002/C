@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int isPrime(int n){
+int isNextPrime(int n){
     int flag=0;
     if(n==0 || n==2)
         flag=0;
@@ -109,18 +109,22 @@ int main(){
     */
 
    //Find next prime
+   /*
     int n;
     scanf("%d",&n);
-    if(isPrime(n)){
+    if(isNextPrime(n)){
         printf("%d is prime no.",n);
     }
     else{
         for(int i=n+1;i<=n+10;i++){
-            if(isPrime(i)==1){
+            if(isNextPrime(i)==1){
                 printf("Next prime is %d",i);
                 break;
             }
         }
     }
+    */
+
+   
     return 0;
 }
