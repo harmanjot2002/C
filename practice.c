@@ -156,5 +156,27 @@ int main(){
     else
         printf("Not palindrome");
     */
+
+    //Pattern Searching
+   char s[100];
+   char p[100];
+   gets(s);
+   gets(p);
+   int m=strlen(p);
+   int n=strlen(s);
+   for(int i=0;i<=n-m;i++){
+    int j;
+    for(j=0;j<m;j++){
+        if(s[i+j]!=p[j])
+            break;
+    }
+    if(j==m)
+        printf("Pattern found at index %d \n",i);
+   }
+
+    //Check if s2 is prefix of s1
+
+
+    //String Tokenization
     return 0;
 }
