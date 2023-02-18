@@ -31,6 +31,43 @@ int main(){
    }
    */
 
-  
+    //GCD of 2 numbers
+    /*
+    int n,m;
+    int min=0;
+    int ans;
+    printf("Enter 2 numbers:");
+    scanf("%d %d",&n,&m);
+    if(n>m){
+        min=m;
+    }
+    else{
+        min=n;
+    }
+    for(int i=1;i<=min;i++){
+        if(n%i==0 && m%i==0)
+            ans=i;
+    }
+    printf("HCF of %d and %d is %d",n,m,ans);
+    */
+
+   //LCM of 2 numbers
+    int n,m;
+    int mx=0;
+    int ans;
+    printf("Enter 2 numbers:");
+    scanf("%d %d",&n,&m);
+    if(n>m){
+        mx=n;
+    }
+    else{
+        mx=m;
+    }
+    for(int i=mx;i<=m*n;i++){
+        if(i%m==0 && i%n==0)
+            ans=i;
+            break;
+    }
+    printf("LCM of %d and %d is %d",n,m,ans);
     return 0;
 }
