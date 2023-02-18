@@ -206,10 +206,23 @@ int main(){
     //Maximum and Second maximum element in array
     int arr[100];
     int n;
+    int mx=0;
+    int sm=0;
     printf("Enter no. of elements to be inserted: ");
     scanf("%d",&n);
+    printf("Enter elements: ");
     for(int i=0;i<n;i++){
-        scanf("%d",arr[i]);
+        scanf("%d",&arr[i]);
     }
+    for(int i=0;i<n;i++){
+        if(arr[i]>mx){
+            sm=mx;
+            mx=arr[i];
+        }
+        else if(arr[i]<mx && arr[i]>sm){
+            sm=arr[i];
+        }
+    }
+    printf("%d %d",sm,mx);
     return 0;
 }
