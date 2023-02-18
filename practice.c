@@ -128,6 +128,7 @@ int main(){
     */
 
    //Swapping 2 strings
+   /*
     char str1[50];
     char str2[50];
     char temp[50];
@@ -138,6 +139,22 @@ int main(){
     strcpy(str1,str2);
     strcpy(str2,temp);
     printf("str1=%s and str2=%s",str1,str2);
+    */
 
+    //Check Palindrome
+    /*
+    char s[100];
+    char temp[100];
+    printf("Enter string ");
+    gets(s);
+    strcpy(temp,s);
+    printf("Original string is %s \n",temp);
+    strrev(s);
+    printf("Reversed string is %s \n",s);
+    if(strcmp(s,temp)==0)
+        printf("Palindrome");
+    else
+        printf("Not palindrome");
+    */
     return 0;
 }
