@@ -178,6 +178,7 @@ int main(){
 
 
     //Check if s2 is prefix of s1
+    /*
     char s1[100];
     char s2[100];
     gets(s1);
@@ -187,7 +188,21 @@ int main(){
     } 
     else
         printf("No");
+    */
 
     //String Tokenization
+    /*
+    char str[100];
+    char sep[10];
+    gets(str);
+    gets(sep);
+    char *token=strtok(str,sep);
+    while(token!=NULL){
+        printf("%s\n",token);
+        token=strtok(NULL,sep);
+    }
+    */
+
+   
     return 0;
 }
