@@ -19,7 +19,7 @@ int main(){
     */
 
    /*
-    //Sum nd average of 5 students
+    //Sum and average of 5 students
     int marks[5];
     float sum=0.0;
     float avg;

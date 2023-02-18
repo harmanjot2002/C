@@ -251,7 +251,69 @@ int main(){
         printf("Sorted");
     */
 
+
+   //Find frequency of a character
+   /*
+    char str[1000], ch;
+    int count = 0;
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+    printf("Enter a character to find it's frequency: ");
+    scanf("%c", &ch);
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (ch == str[i])
+            count++;
+    }
+    printf("Frequency of %c = %d", ch, count);
+    */
+
    //Sort an array
+   /*
+    int n;
+    printf("Enter no. of elements of array: ");
+    scanf("%d",&n);
+    int arr[n];
+    printf("Enter elements of array ");
+    for(int i=0;i<n;i++)
+        scanf("%d",&arr[i]);
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            if(arr[i]>arr[j]){
+                int temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
+        }
+    }
+    printf("Sorted array is ");
+    for(int i=0;i<n;i++)
+        printf("%d ",arr[i]);
+    */
+
+   //Fibonacci Number
+
+
+   //Armstrong Number
+
    
+   //Bitwise Operators
+
+
+   //Count distinct elements
+
+
+   //Print Cross-Diagnol elements in matrix
+
+   
+   //Prime Factorization
+
+
+   //Decimal to Binary Conversion
+
+
+   //Binary to Decimal Conversion
+
+
+   //GFG Pattern
     return 0;
 }
