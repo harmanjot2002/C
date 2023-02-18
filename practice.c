@@ -203,6 +203,13 @@ int main(){
     }
     */
 
-   
+    //Maximum and Second maximum element in array
+    int arr[100];
+    int n;
+    printf("Enter no. of elements to be inserted: ");
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        scanf("%d",arr[i]);
+    }
     return 0;
 }
