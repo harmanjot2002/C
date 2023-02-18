@@ -205,6 +205,7 @@ int main()
   */
 
   // Check palindrome of a string
+  /*
   char s[50];
   char temp[50];
   printf("Enter a string: ");
@@ -218,7 +219,7 @@ int main()
     printf("Palindrome");
   else  
     printf("Not palindrome");
-
+  */
 
   /*
   int sz;
