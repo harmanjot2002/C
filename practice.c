@@ -204,6 +204,7 @@ int main(){
     */
 
     //Maximum and Second maximum element in array
+    /*
     int arr[100];
     int n;
     int mx=0;
@@ -224,5 +225,33 @@ int main(){
         }
     }
     printf("%d %d",sm,mx);
+    */
+
+
+    //Check sorted array or not
+    /*
+    int n;
+    int flag=1;
+    printf("Enter no. of elements to be inserted: ");
+    scanf("%d",&n);
+    int arr[n];
+    printf("Enter elements: ");
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(int i=1;i<n;i++){
+        if(arr[i]<arr[i-1]){
+            flag=0;
+            break;
+        }
+    }
+    if(flag==0)
+        printf("Not sorted");
+    else    
+        printf("Sorted");
+    */
+
+   //Sort an array
+   
     return 0;
 }
