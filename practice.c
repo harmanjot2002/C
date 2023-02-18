@@ -52,6 +52,7 @@ int main(){
     */
 
    //LCM of 2 numbers
+   /*
     int n,m;
     int mx=0;
     int ans;
@@ -69,5 +70,8 @@ int main(){
             break;
     }
     printf("LCM of %d and %d is %d",n,m,ans);
+    */
+
+   
     return 0;
 }
