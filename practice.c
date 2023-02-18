@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+
 
 int isNextPrime(int n){
     int flag=0;
@@ -125,6 +127,17 @@ int main(){
     }
     */
 
-   
+   //Swapping 2 strings
+    char str1[50];
+    char str2[50];
+    char temp[50];
+    printf("Enter 2 strings:\n");
+    gets(str1);
+    gets(str2);
+    strcpy(temp,str1);
+    strcpy(str1,str2);
+    strcpy(str2,temp);
+    printf("str1=%s and str2=%s",str1,str2);
+
     return 0;
 }
