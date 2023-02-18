@@ -41,11 +41,12 @@ void main(){
         100
         2 2 5 5 
    */
+    /*
     int n;
     printf("\n");
     scanf("%d",&n); 
     prime(n);
-
+    */
 }
 
 void display(){
