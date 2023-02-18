@@ -2,6 +2,14 @@
 #include <stdlib.h>
 
 int main(){
+/*
+    Enter no. of values to be entered 5
+    Enter values: 1 2 3 4 5
+    Entered values are: 1 2 3 4 5 
+    Enter updated value of n: 7   
+    Previous address=13113512,new address=13113512
+    Values are: 1 2 3 4 5 0 167772170 
+*/
     int n;
     int *ptr;
     printf("Enter no. of values to be entered ");
