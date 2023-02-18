@@ -158,6 +158,7 @@ int main(){
     */
 
     //Pattern Searching
+    /*
    char s[100];
    char p[100];
    gets(s);
@@ -173,7 +174,9 @@ int main(){
     if(j==m)
         printf("Pattern found at index %d \n",i);
    }
+    */
 
+   
     //Check if s2 is prefix of s1
 
 
