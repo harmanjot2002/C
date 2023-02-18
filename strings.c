@@ -205,21 +205,20 @@ int main()
   */
 
   // Check palindrome of a string
-  /*
   char s[50];
-  printf("Enter a string: \n");
-  scanf("%s",s);
-  char *s2=strrev(s);
-  printf("%s",s2);
-  int val=strcmp(s,s2);
-  printf("%d",val);
-  if(val==0){
-   printf("\nPalindrome");
-  }
-  else{
-   printf("\nNot Palindrome");
-  }
-  */
+  char temp[50];
+  printf("Enter a string: ");
+  gets(s);
+  strcpy(temp,s);
+  printf("Original string is: %s\n",temp);
+  printf("Reversed string is: ");
+  puts(strrev(s));
+  int res=strcmp(temp,s);
+  if(res==0)
+    printf("Palindrome");
+  else  
+    printf("Not palindrome");
+
 
   /*
   int sz;
@@ -257,8 +256,9 @@ int main()
        Harma
   */
 
+ //Count no. of vowels in a string
+  /*
   char str[50];
-  // fgets(str,sizeof(str),stdin);
   gets(str);
   int cnt = 0;
   for (int i = 0; str[i] != '\0'; i++)
@@ -267,5 +267,6 @@ int main()
       cnt++;
   }
   printf("%d", cnt);
+  */
   return 0;
 }
