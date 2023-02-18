@@ -176,9 +176,17 @@ int main(){
    }
     */
 
-   
-    //Check if s2 is prefix of s1
 
+    //Check if s2 is prefix of s1
+    char s1[100];
+    char s2[100];
+    gets(s1);
+    gets(s2);
+    if(strncmp(s1,s2,strlen(s2))==0){
+        printf("Yes");
+    } 
+    else
+        printf("No");
 
     //String Tokenization
     return 0;
