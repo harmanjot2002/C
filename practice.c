@@ -397,7 +397,8 @@ int main(){
     3
     5
    */
-   int n;
+  /*
+    int n;
     printf("Enter value of n: ");
     scanf("%d",&n);
     int arr[n];
@@ -423,10 +424,71 @@ int main(){
             printf("%d\n",arr[i]);
         }
     }
+    */
+
+
+   //Print distinct elements in array
+   /*
+    int n;
+    printf("Enter value of n: ");
+    scanf("%d",&n);
+    int arr[n];
+    int freq[n];
+    int visited=-1;
+    printf("Enter elements of array: ");
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<n;i++){
+        int count=1;
+        for(int j=i+1;j<n;j++){
+            if(arr[i]==arr[j]){
+                count++;
+                freq[j]=visited;
+            }
+        }
+        if(freq[i]!=visited)
+            freq[i]=count;
+    }
+    for(int i=0;i<n;i++){
+        if(freq[i]!=visited){
+            printf("%d\n",arr[i]);
+        }
+    }
+    */
 
 
    //Count distinct elements
-
+   /*
+    int n;
+    printf("Enter value of n: ");
+    scanf("%d",&n);
+    int arr[n];
+    int freq[n];
+    int visited=-1;
+    printf("Enter elements of array: ");
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<n;i++){
+        int count=1;
+        for(int j=i+1;j<n;j++){
+            if(arr[i]==arr[j]){
+                count++;
+                freq[j]=visited;
+            }
+        }
+        if(freq[i]!=visited)
+            freq[i]=count;
+    }
+    int cnt=0;
+    for(int i=0;i<n;i++){
+        if(freq[i]!=visited){
+            cnt++;
+        }
+    }
+    printf("%d",cnt);
+    */
 
    //Print Cross-Diagnol elements in matrix
    /*
