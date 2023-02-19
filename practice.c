@@ -83,9 +83,10 @@ int main(){
         mx=m;
     }
     for(int i=mx;i<=m*n;i++){
-        if(i%m==0 && i%n==0)
+        if(i%m==0 && i%n==0){
             ans=i;
             break;
+        }
     }
     printf("LCM of %d and %d is %d",n,m,ans);
     */
