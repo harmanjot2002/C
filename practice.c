@@ -193,6 +193,15 @@ int main(){
 
     //String Tokenization
     /*
+        har-man,jot kaur-is-good,girl thanks
+        -,
+        har        
+        man        
+        jot kaur   
+        is
+        good       
+        girl thanks
+    */
     char str[100];
     char sep[10];
     gets(str);
@@ -202,7 +211,7 @@ int main(){
         printf("%s\n",token);
         token=strtok(NULL,sep);
     }
-    */
+    
 
     //Maximum and Second maximum element in array
     /*
