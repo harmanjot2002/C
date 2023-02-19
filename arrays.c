@@ -75,7 +75,7 @@ int main(){
     int arr2[n2];
     for(int i=0;i<n2;i++){
         scanf("%d",&arr2[i]);
-    }
+    } 
     for(int i=0;i<n2;i++){
         for(int j=i+1;j<n2;j++){
             if(arr2[i]>arr2[j]){
