@@ -541,6 +541,70 @@ int main(){
     }
     */
 
+
+   //Plus Pattern
+   /*
+    int n;
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++){
+        if(i==n/2+1){
+            for(int j=1;j<=n;j++){
+                printf("+");
+            }
+        }
+        else{
+            for(int k=1;k<=n/2;k++){
+                printf(" ");
+            }
+            printf("+");
+        }
+        printf("\n");
+    }
+    */
+
+   //Cross Pattern
+   /*
+    int n;
+    scanf("%d",&n);
+    for(int i=1;i<=2*n-1;i++){
+        for(int j=1;j<=2*n-1;j++){
+            if((i==j) || (i+j==2*n)){
+                printf("*");
+            }
+            else{
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    */
+
+   //Pascal's  Triangle
+   /*
+    6
+      1 
+     1 1
+    1 2 1
+   1 3 3 1
+  1 4 6 4 1
+ 1 5 10 10 5 1
+   */
+    int n,c;
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n-i;j++){
+            printf(" ");
+        }
+        for(int j=0;j<=i;j++){
+            if(i==0 || j==0)
+                c=1;
+            else
+                c=(c*(i-j+1))/j;
+            printf("%d ",c);
+        }
+        printf("\n");
+    }
+
    //Decimal to Binary Conversion
 
 
