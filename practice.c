@@ -619,6 +619,7 @@ int main(){
 
 
    //Decimal to Binary Conversion
+   /*
     int n;
     scanf("%d",&n);
     char str[100];
@@ -631,7 +632,8 @@ int main(){
         i++;
     }
     rev(str);
-
+    */
+   
    //Binary to Decimal Conversion
    /*
     char str[100];
