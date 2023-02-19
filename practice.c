@@ -346,8 +346,6 @@ int main(){
     }
     */
 
-   //Bitwise Operators
-
 
     //Frequency of each element in array
     /*
@@ -519,6 +517,9 @@ int main(){
 
 
    //HackerRank Pattern
+
+
+   //Bitwise Operators
 
     return 0;
 }
