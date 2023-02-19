@@ -320,25 +320,32 @@ int main(){
 
 
    //Armstrong Number
+   /*
     int n;
     scanf("%d",&n);
     int x=n;
     int y=n;
     int rem;
-    int sum=0;
+    float sum=0.0;
     int cnt=0;
     while(y>0){
         y=y/10;
         cnt++;
     }
-    // printf("%d",cnt);
     while(x>0){
         rem=x%10;
         x=x/10;
         sum+=pow(rem,cnt);
     }
-    printf("%d",sum);
-   
+    // printf("%.0f",sum);
+    if(sum==n){
+        printf("Armstrong");
+    }
+    else{
+        printf("Not armstrong");
+    }
+    */
+
    //Bitwise Operators
 
 
@@ -346,6 +353,21 @@ int main(){
 
 
    //Print Cross-Diagnol elements in matrix
+    int a[3][3];
+    int n=3;
+    printf("Enter elements of 2-D matrix: ");
+    for(int i=0;i<3;i++){
+        for(int j=0;j<3;j++){
+            scanf("%d",&a[i][j]);
+            if(i==j){
+                printf("Diagnol element is %d \n",a[i][j]);
+            }
+            else if(i+j==n-1){
+                printf("Cross-Diagnol element is %d \n",a[i][j]);
+            }
+        }
+    }
+    
 
    
    //Prime Factorization
