@@ -49,6 +49,20 @@ int main(){
    }
    */
 
+
+  //Maximum in each row
+  /*
+    int arr[2][3]={1,3,2,6,4,5};
+    for(int i=0;i<2;i++){
+        int maxi=0;
+        for(int j=0;j<3;j++){
+            if(arr[i][j]>maxi)
+                maxi=arr[i][j];
+        }
+        printf("Maximum in row %d is %d\n",i,maxi);
+    }
+    */
+
     //GCD of 2 numbers
     /*
     int n,m;
