@@ -522,7 +522,24 @@ int main(){
 
    
    //Prime Factorization
-
+   /*
+    Enter value of n:99
+    3 3 11
+   */
+   /*
+    int n;
+    printf("Enter value of n: ");
+    scanf("%d",&n);
+    int c=2;
+    while(n>1){
+        if(n%c==0){
+            printf("%d ",c);
+            n=n/c;
+        }
+        else
+            c++;
+    }
+    */
 
    //Decimal to Binary Conversion
 
