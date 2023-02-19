@@ -612,6 +612,7 @@ int main(){
 
 
    //Binary to Decimal Conversion
+   /*
     char str[100];
     gets(str);
     int ans=0;
@@ -622,7 +623,9 @@ int main(){
         base*=2;
     }
     printf("%d",ans);
+    */
 
+   
    //HackerRank Pattern
 
 
