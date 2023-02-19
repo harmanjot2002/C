@@ -612,7 +612,16 @@ int main(){
 
 
    //Binary to Decimal Conversion
-
+    char str[100];
+    gets(str);
+    int ans=0;
+    int base=1;
+    for(int i=strlen(str)-1;i>=0;i--){
+        int digit=str[i]-48;
+        ans+=(digit*base);
+        base*=2;
+    }
+    printf("%d",ans);
 
    //HackerRank Pattern
 
