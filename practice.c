@@ -349,6 +349,43 @@ int main(){
    //Bitwise Operators
 
 
+    //Frequency of each element in array
+    /*
+        Enter value of n: 9
+        Enter elements of array: 1 2 8 3 2 2 2 5 1
+        1 2
+        2 4
+        8 1
+        3 1
+        5 1
+    */
+    int n;
+    printf("Enter value of n: ");
+    scanf("%d",&n);
+    int arr[n];
+    int freq[n];
+    int visited=-1;
+    printf("Enter elements of array: ");
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    for(int i=0;i<n;i++){
+        int count=1;
+        for(int j=i+1;j<n;j++){
+            if(arr[i]==arr[j]){
+                count++;
+                freq[j]=visited;
+            }
+        }
+        if(freq[i]!=visited)
+            freq[i]=count;
+    }
+    for(int i=0;i<n;i++){
+        if(freq[i]!=visited){
+            printf("%d %d\n",arr[i],freq[i]);
+        }
+    }
+
    //Count distinct elements
 
 
@@ -380,6 +417,7 @@ int main(){
    //Binary to Decimal Conversion
 
 
-   //GFG Pattern
+   //HackerRank Pattern
+
     return 0;
 }
