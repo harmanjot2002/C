@@ -301,7 +301,20 @@ int main(){
         printf("%d ",arr[i]);
     */
 
-   //Fibonacci Number
+   //Fibonacci Series
+    int n;
+    printf("Enter vaue of n: ");
+    scanf("%d",&n);
+    int a=0;
+    int b=1;
+    int c;
+    printf("%d %d",a,b);
+    for(int i=2;i<n;i++){
+        c=a+b;
+        printf("%d ",c);
+        a=b;
+        b=c;
+    }
 
 
    //Armstrong Number
