@@ -18,6 +18,16 @@ int isNextPrime(int n){
         return 0;
 }
 
+void rev(char str[]){
+    int l=strlen(str);
+    for(int i=0;i<l/2;i++){
+        char temp=str[i];
+        str[i]=str[l-i-1];
+        str[l-i-1]=temp;
+    }
+    printf("%s",str);
+}
+
 int main(){
     //Check leap year
     /*
@@ -609,7 +619,18 @@ int main(){
 
 
    //Decimal to Binary Conversion
-
+    int n;
+    scanf("%d",&n);
+    char str[100];
+    int i=0;
+    while(n>0){
+        int rem=n%2;
+        n=n/2;
+        char num=rem+48;
+        str[i]=num;
+        i++;
+    }
+    rev(str);
 
    //Binary to Decimal Conversion
    /*
@@ -625,7 +646,7 @@ int main(){
     printf("%d",ans);
     */
 
-   
+
    //HackerRank Pattern
 
 
