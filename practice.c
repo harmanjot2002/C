@@ -353,6 +353,7 @@ int main(){
 
 
    //Print Cross-Diagnol elements in matrix
+   /*
     int a[3][3];
     int n=3;
     printf("Enter elements of 2-D matrix: ");
@@ -367,7 +368,7 @@ int main(){
             }
         }
     }
-    
+    */
 
    
    //Prime Factorization
