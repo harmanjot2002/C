@@ -693,6 +693,7 @@ int main(){
     5 4
     2 3 3
    */
+  /*
     int n,k;
     scanf("%d %d",&n,&k);
     int maxAnd = 0,maxOr = 0,maxXor = 0;
@@ -710,5 +711,20 @@ int main(){
         }
     }
     printf("%d %d %d", maxAnd, maxOr, maxXor);
+    */
+
+   
+   //Reverse a string
+    char str[100];
+    printf("Enter a string: ");
+    gets(str);
+    int len=strlen(str);
+    for(int i=len-1;i>=0;i--){
+        if(str[i]==' '){
+            str[i]='\0';
+            printf("%s ",&(str[i])+1);
+        }
+    }
+    printf("%s ",str);
     return 0;
 }
