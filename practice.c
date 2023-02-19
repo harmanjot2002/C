@@ -589,6 +589,7 @@ int main(){
   1 4 6 4 1
  1 5 10 10 5 1
    */
+    /*
     int n,c;
     scanf("%d",&n);
     for(int i=0;i<n;i++){
@@ -604,6 +605,8 @@ int main(){
         }
         printf("\n");
     }
+    */
+
 
    //Decimal to Binary Conversion
 
