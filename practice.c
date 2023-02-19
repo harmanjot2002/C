@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
+#include <math.h>
 
 int isNextPrime(int n){
     int flag=0;
@@ -302,6 +302,7 @@ int main(){
     */
 
    //Fibonacci Series
+   /*
     int n;
     printf("Enter vaue of n: ");
     scanf("%d",&n);
@@ -315,10 +316,28 @@ int main(){
         a=b;
         b=c;
     }
+    */
 
 
    //Armstrong Number
-
+    int n;
+    scanf("%d",&n);
+    int x=n;
+    int y=n;
+    int rem;
+    int sum=0;
+    int cnt=0;
+    while(y>0){
+        y=y/10;
+        cnt++;
+    }
+    // printf("%d",cnt);
+    while(x>0){
+        rem=x%10;
+        x=x/10;
+        sum+=pow(rem,cnt);
+    }
+    printf("%d",sum);
    
    //Bitwise Operators
 
