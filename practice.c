@@ -73,6 +73,7 @@ int main(){
     }
     */
 
+
     //GCD of 2 numbers
     /*
     int n,m;
