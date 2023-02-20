@@ -715,6 +715,7 @@ int main(){
 
    
    //Reverse a string
+   /*
     char str[100];
     printf("Enter a string: ");
     gets(str);
@@ -726,5 +727,19 @@ int main(){
         }
     }
     printf("%s ",str);
+    */
+
+   /*
+    int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};
+    printf("%d", **arr + 2);
+    */
+
+   /*
+    int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};
+    int (*p)[3] = arr;
+    printf("%d", **p);
+    */
+
+   
     return 0;
 }
