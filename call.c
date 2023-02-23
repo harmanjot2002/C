@@ -16,7 +16,7 @@ int main(){
 write a program to accept a value from the user in the main function in a variable called m and pass the variable too a function called increment
 where the value of m would be increased by 1.
 In both the functions print the value of m nd the address of m .
-
+ 
 void inc(int m){
     m=m+1;
     printf("the value of m in inc fun is: %d\n",m);
