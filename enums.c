@@ -1,6 +1,6 @@
-
 #include <stdio.h>
-int main(){
+
+int main(){ 
 	enum { sun, mon, tue, wed, thr, fri, sat};
 	int a;
 	printf("enter any day:\n");
