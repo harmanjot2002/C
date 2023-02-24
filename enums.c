@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){ 
-	enum { sun, mon, tue, wed, thr, fri, sat};
+	enum days{ sun, mon, tue, wed, thr, fri, sat}d;
 	int a;
 	printf("enter any day:\n");
 	scanf("%d",&a);
@@ -30,4 +30,6 @@ int main(){
         default: 
             printf("try typing 0 to 6");
     }
+
+    printf("Size of enum is \n%d",sizeof(d));
 }
