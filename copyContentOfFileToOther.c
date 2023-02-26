@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include<stdlib.h>
-
+ 
 void main(){
     FILE *fp1,*fp2;
     char c;
