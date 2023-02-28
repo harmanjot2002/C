@@ -6,7 +6,7 @@ int sum(int n){
     else    
         return (n+sum(n-1));
 }
-
+ 
 int sumOfEven(int n){
     if(n==0 || n==2)
         return n;
