@@ -4,13 +4,30 @@
 #include <string.h>
 
 struct{
+    int empid;
+    char *empname;
+    int empage;
+    int empsalary;
+}emp1,emp2;
+
+
+/*
+struct{
     char *name;
     int rollno,C,Java,DBMS;
     float avg;
     char *addr;
 }stu1,stu2;
+*/
+
 
 void main(){
+    scanf("%d %d",emp1.empid,emp2.empid);
+    scanf("%s %s",emp1.empname,emp2.empname);
+    scanf("%d %d",emp1.empage,emp2.empage);
+    scanf("%d %d",emp1.empsalary,emp2.empsalary);
+
+    /*
     stu1.name;
     stu1.rollno;
     stu1.C;
@@ -43,4 +60,5 @@ void main(){
 
     printf("Details of second student are:\n");
     printf("rollno:%d\nName:%s\nMarks in C:%d\nMarks in Java:%d\nMarks in DBMS:%d\nAddress:%s\nAverage:%f\n",stu2.rollno,stu2.name,stu2.C,stu2.Java,stu2.DBMS,stu2.addr,stu2.avg);
+    */
 }
