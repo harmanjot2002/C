@@ -133,20 +133,5 @@ void manager(){
 }
 int main(){
     printf("Details of employee\n");
-    // scanf("%d",&u1.EID);
-    // char n[100];
-    // scanf("%s",&n);
-    // strcpy(u1.name,n);
-    // scanf("%d",&u1.age);
-    // printf("mng\n");
-    /*
-    printf("%d %s %d\n",mng.EID,mng.name,mng.age);
-    if(mng.age>30){
-        printf("Salary is 65000");
-    }
-    else{
-        printf("Salary is 50000");
-    }
-    */
     manager();
 }
