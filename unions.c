@@ -44,11 +44,13 @@ int main(){
 #include<stdio.h>
 
 struct Book{
+    int id;
     int price;
     char bookName[100];
-    char authorName[100]
+    char authorName[100];
 };
 
 int main(){
-    struct Book B1 = {100,"Old temple","Harsh"};
+    struct Book B1 = {10,100,"Old temple","Harsh"};
+    printf("%d %d %s %s",B1.id,B1.price,B1.bookName,B1.authorName);
 }
