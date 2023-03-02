@@ -41,3 +41,14 @@ int main(){
 }
 */
 
+#include<stdio.h>
+
+struct Book{
+    int price;
+    char bookName[100];
+    char authorName[100]
+};
+
+int main(){
+    struct Book B1 = {100,"Old temple","Harsh"};
+}
