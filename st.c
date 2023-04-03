@@ -1,4 +1,4 @@
-//Binary to Decimal
+//1.Binary to Decimal
 /*
 #include<stdio.h>
 #include<string.h>
@@ -378,7 +378,6 @@ int main(){
 //Break the number
 /*
 #include<stdio.h>
-
 int main(){
     int n;
     scanf("%d",&n);
@@ -549,6 +548,23 @@ int main(){
 
 
 //Medals Calculation
+/*
+ int c,n,m;
+    scanf("%d %d %d",&c,&n,&m);
+    int arr[c][3],i,j,k;
+    for(i=0;i<c;i++){
+        for(j=0;j<3;j++){
+            scanf("%d",&arr[i][j]);
+        }
+    }
+    for(i=0;i<c;i++){
+        for(j=0;j<3;j++){
+            scanf("%d",&k);
+            arr[i][j]+=k;
+        }
+    }
+    printf("%d",arr[n-1][m-1]);
+*/
 
 
 //Profit in Confectionary
