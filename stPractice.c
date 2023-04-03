@@ -853,48 +853,6 @@ int main(){
     */
 
 
-   //Binary to Decimal(1010->10,101->5)
-   /*
-    int n;
-    scanf("%d",&n);
-    int base=1;
-    int ans=0;
-    while(n>0){
-        int digit=n%10;
-        n=n/10;
-        ans+=(digit*base);
-        base*=2;
-    }
-    printf("%d",ans);
-    */
-
-
-   //Binary to decimal(string)
-   /*
-   char p[100];
-   gets(p);
-   int base=1;
-   int ans=0;
-   for(int i=strlen(p)-1;i>=0;i--){
-    int digit=p[i]-48;
-    ans+=(digit*base);
-    base*=2;
-   }
-   printf("%d",ans);
-   */
-
-  //Decimal to binary(5->101,10->1010)
-    int n;
-    scanf("%d",&n);
-    int arr[100],i=0,k=0;
-    while(n>0){
-        arr[i]=n%2;
-        n=n/2;
-        i++;
-        k++;
-    }
-    for(int i=k-1;i>=0;i--){
-        printf("%d",arr[i]);
-    }
+   
     return 0;
 }
